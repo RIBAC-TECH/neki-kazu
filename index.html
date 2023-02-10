@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <style>
+      h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body onload="displaySentences()">
+    <h1 id="sentences"></h1>
+    <script>
+      function displaySentences() {
+        const firstSentences = [
+          "Neki kažu da se ton zvona njegove Nokije može čuti samo pod ljubičastim staklom poreklom iz Rusije…",
+          "Neki kažu da kada je temperatura tačno 28°C, on vrši fotosintezu…",
+		  "Neki kažu da je on nevidljiv kada ne nosi svoje naočare…",
+		  "Neki kažu da je teoretski nemoguće da on uđe u Republiku Ekvador…",
+		  "Neki kažu da je on vlasnik titule „Disko Kralj 1986“…",
+		  "Neki kažu da je njegovo pravo ime Đubro Haviža...",
+		  "Neki kažu da je on izumeo supu sa slovima...",
+		  "Neki kažu da on sluša isključivo pesme koje u svom tekstu imaju najmanje jedan broj...",
+		  "Neki kažu da je on u prošlom životu bio kaustična soda...",
+		  "Neki kažu da kada bi on bio kalkulator, podržavao bi do 12 cifara...",
+		  "Neki kažu da se on ne brije, nego mu bradu pase ovca...",
+		  "Neki kažu da on četvrtkom jede isključivo paradajz...",
+		  "Neki kažu da je on pokušao da osnuje novu religiju, VENEIZAM...",
+		  "Neki kažu da se on plaši Milana Kalinića...",
+		  "Neki kažu da on utorkom i nedeljom ima nezaustavljivu želju da liže stolice...",
+		  "Neki kažu da on na teritoriji Rumunije ima nadljudske moći...",
+		  "Neki kazu da je on izumeo ponedeljak…",
+		  "Neki kažu da se on plaši cvećara…",
+		  "Neki kažu da, kada je pun mesec, on ritualno spaljuje kalkulatore…",
+		  "Neki kažu da kod njega Bog zna za 5, on za 4, a patke za 3...",
+        ];
+        const secondSentences = [
+          "I da je prognan iz 46 država SAD zato što je odbijao da prihvati da je u Americi nula prirodan broj.",
+          "I da na svom računaru igra isključivo igrice u kojima se pojavljuju mačke.",
+		  "I da je verovatnoća dobijanja najviše ocene na njegovom pismenom zadatku tačno jednaka verovatnoći preživljavanja pada sa visine od 27 metara.",
+		  "I da je ubeđen da je planeta Venera nazvana po Veneu Bogoslavovu.",
+		  "I da, kada bi neko zapalio njegovu Veneovu Zbirku, gorela bi 1000 dana.",
+		  "I da je, kako bi proslavio 30 godina radnog staža, naučio da hoda na rukama.",
+		  "I da se 2003. godine kandidovao za narodnog poslanika sa ciljem da donese zakon kojim bi se drastično ograničila prava inženjera.",
+		  "I da je trebalo da se pojavi u igri „Mortal Kombat 9“ kao DLC lik, ali je dogovor propao zbog patke.",
+		  "I da ako zapalite Veneovu Zbirku i Krugovu Zbirku istim upaljačem, nastaće nuklearna katastrofa koju će preživeti samo on i patke.",
+		  "I da, ako izgovorite njegovo ime 7 puta ispred ogledala, ispred vas će se pojaviti neki svetski poznati matematičar i gađati vas patkama.",
+		  "I da se vozi isključivo autobusima i tramvajima gradskog prevoza koji su označeni neparnim brojem.",
+		  "I da je imao afro frizuru, pre nego što mu ju je 1997. godine pojela patka.",
+		  "I da je, krajem 1996. godine, snimio pesmu „Vene Rep“, a producent te pesme je bila patka.",
+		  "I da ima samo tri prijatelja, od kojih je jedan patka.",
+		  "I da je njegov instruktor plivanja bila patka.",
+		  "I da u njegovom stanu postoji prostorija u koju smeju da ulaze isključivo patke.",
+		  "I da tvrdi da je krivac za štamparske greške u Veneovoj Zbirci patka.",
+		  "I da se njegova magistarska teza dovodi u pitanje jer je jedan od članova komisije za odbranu bila patka.",
+		  "I da je uveo novu disciplinu na Olimpijskim igrama, bacanje telefona kroz prozor u dalj, a svetski šampion u toj disciplini je patka.",
+        ];
+
+        const randomFirstSentence =
+          firstSentences[Math.floor(Math.random() * firstSentences.length)];
+        const randomSecondSentence =
+          secondSentences[Math.floor(Math.random() * secondSentences.length)];
+
+        document.getElementById("sentences").innerHTML =
+          randomFirstSentence + " " + randomSecondSentence + "<br><br>" + "Sve što znamo je da se zove Saša Doder!";
+      }
+    </script>
+  </body>
+</html>
